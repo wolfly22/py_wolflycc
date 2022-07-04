@@ -5,7 +5,7 @@ dict_level_a = {}
 
 #获取节点的编号value
 def  key_value(node):
-    if(dict_level_a.has_key(node)):
+    if(dict_level_a.keys(node)):
         return dict_level_a.get(node)
     else:
         return None
@@ -18,7 +18,7 @@ def  get_node_index():
 
 def process_list():
     lists = psutil.pids()
-    # print( lists )
+    print( lists )
     file_lists = []
     for i in lists:
         if(i>=150):
