@@ -5,7 +5,7 @@ import numpy as np
 import random
 import os
 import time
-
+import sys
 
 #进度条
 def  process_line():
@@ -50,10 +50,11 @@ def  luck_num(num_list):
         bingo = random.choice(blue)
         jackpot.append(bingo)
         blue.remove(bingo)
-    for i in num_list[5:7]:
+    for i in num_list[5:]:
         if i in red:
             red.remove(i)
-    for i in range(2):
+    jackpot.append(":")
+    for i in range(4):
         bingo = random.choice(red)
         jackpot.append(bingo)
         red.remove(bingo)
@@ -80,5 +81,7 @@ def goodDog():
 
 
 if __name__ == "__main__":
-    goodDog()
+    last = [2,6,21,25,28,2,6]
+    # goodDog()
+    luck_num(last)
 
