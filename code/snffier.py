@@ -9,8 +9,6 @@ host = socket.gethostbyname( socket.gethostname())
 def main():
     socket_protocol = None
     if os.name == "nt":
-
-        
         socket_protocol = socket.IPPROTO_IP
     else:
         socket_protocol = socket.IPPROTO_ICMP
