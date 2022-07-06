@@ -77,11 +77,12 @@ def goodDog():
     except KeyboardInterrupt:
         observer.stop()
     observer.join()
-    
 
+
+# [24, 25, 30, 34, 8, ':', 11, 8, 5, 3]
 
 if __name__ == "__main__":
-    last = [2,6,21,25,28,2,6]
+    last = [4,12,13,17,18,7,9]
     # goodDog()
     luck_num(last)
 
