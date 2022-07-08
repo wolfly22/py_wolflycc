@@ -6,7 +6,7 @@ def packet_callback(packet):
     print(packet.show())
 
 def main():
-    sniff(prn=packet_callback,count=1)
+    sniff(prn=packet_callback,count=2)
 
 if __name__=="__main__":
     main()
