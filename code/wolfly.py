@@ -45,22 +45,38 @@ def  luck_num(num_list):
     for i in num_list[:len(num_list)-2]:
         if i in blue:
             blue.remove(i)
-    jackpot = []
-    for i in range(5):
-        bingo = random.choice(blue)
-        jackpot.append(bingo)
-        blue.remove(bingo)
-    for i in num_list[5:]:
-        if i in red:
-            red.remove(i)
-    jackpot.append(":")
-    for i in range(4):
-        bingo = random.choice(red)
-        jackpot.append(bingo)
-        red.remove(bingo)
-    print(jackpot)
+    for iii in range(3):
+        jackpot = []
+        for i in range(5):
+            bingo = random.choice(blue)
+            jackpot.append(bingo)
+            blue.remove(bingo)
+        for i in num_list[5:]:
+            if i in red:
+                red.remove(i)
+        jackpot.append(":")
+        for i in range(2):
+            bingo = random.choice(red)
+            jackpot.append(bingo)
+            red.remove(bingo)
+        print(jackpot)
     return
 
+
+def  luck_n(num_list):
+    remove_str = " ".join([ str(j) for j in num_list])
+    print(f"Remove: {remove_str}")
+    blue = [i for i in  range(1,36)]
+    red = [i for i in range(1,13)]
+    for i in num_list[:len(num_list)-2]:
+        if i in blue:
+            blue.remove(i)
+    jackpot = []
+    for n in range(5):
+        blue_pix = random.choices(blue,k=5)
+        red_bix = random.choices(red,k=2)
+        print(blue_pix,":",red_bix)
+    return
 
 
 
@@ -82,7 +98,7 @@ def goodDog():
 # [24, 25, 30, 34, 8, ':', 11, 8, 5, 3]
 
 if __name__ == "__main__":
-    last = [4,12,13,17,18,7,9]
+    last = [4,6,10,24,28,6,12]
     # goodDog()
     luck_num(last)
 
