@@ -38,6 +38,7 @@ def  process_line():
 
 
 def  luck_num(num_list):
+    print( num_list)
     remove_str = " ".join([ str(j) for j in num_list])
     print(f"Remove: {remove_str}")
     blue = [i for i in  range(1,36)]
@@ -98,7 +99,7 @@ def goodDog():
 # [24, 25, 30, 34, 8, ':', 11, 8, 5, 3]
 
 if __name__ == "__main__":
-    last = [4,6,10,24,28,6,12]
+    last = [7,11,14,21,29,7,10]
     # goodDog()
-    luck_num(last)
+    luck_n(last)
 
